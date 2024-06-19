@@ -166,7 +166,7 @@ function hitungTarif() {
     if (totalTarif > 10000000) {
         biayaMaterai = 10000;
     } else if (totalTarif > 5000000) {
-        biayaMaterai = 5000;
+        biayaMaterai = 10000;
     }
 
     totalTarif += adminFee + denda + biayaMaterai;
