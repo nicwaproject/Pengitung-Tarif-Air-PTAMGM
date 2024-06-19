@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penghitung Tarif Air</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Hitung Tarif">
+    <meta property="og:description" content="Penghitung Tarif Air PTAM Giri Menang">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+
+    <!-- Favicon -->
+    <link rel="icon" href="ptamgm.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <h1>Penghitung Tarif Air</h1>
+        <form id="tarifForm">
+            <label for="wilayah">Wilayah</label>
+            <select id="wilayah">
+                <option value="" disabled selected>Pilih Wilayah</option>
+                <option value="Mataram">Mataram</option>
+                <option value="Lombok Barat">Lombok Barat</option>
+            </select>
+
+            <label for="golongan">Golongan</label>
+            <select id="golongan">
+                <option value="" disabled selected>Pilih Golongan</option>
+                <option value="1A">Golongan 1A</option>
+                <option value="1B">Golongan 1B</option>
+                <option value="1C">Golongan 1C</option>
+                <option value="1D">Golongan 1D</option>
+                <option value="1E">Golongan 1E</option>
+                <option value="1F">Golongan 1F</option>
+                <option value="2A">Golongan 2A</option>
+                <option value="2B">Golongan 2B</option>
+                <option value="2C">Golongan 2C</option>
+                <option value="2D">Golongan 2D</option>
+                <option value="2E">Golongan 2E</option>
+                <option value="3A">Golongan 3A</option>
+                <option value="3B">Golongan 3B</option>
+                <option value="3C">Golongan 3C</option>
+                <option value="3D">Golongan 3D</option>
+                <option value="3E">Golongan 3E</option>
+                <option value="3F">Golongan 3F</option>
+            </select>
+
+            <label for="tahun">Tahun</label>
+            <select id="tahun">
+                <option value="" disabled selected>Pilih Tahun</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+            </select>
+
+            <label for="pemakaian">Pemakaian (m³):</label>
+            <input type="number" id="pemakaian" placeholder="Masukkan Pemakaian Air" required>
+
+            <label for="tanggalPembayaran">Tanggal Pembayaran</label>
+            <input type="date" id="tanggalPembayaran">
+        </form>
+
+        <div id="hasil" class="result-container"></div>
+
+        <footer>&copy; Muhammad Riziq Zhapran</footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
