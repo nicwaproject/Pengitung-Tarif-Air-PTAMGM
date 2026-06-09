@@ -50,7 +50,7 @@ function hitungTarif() {
             "2C": [4200, 5150, 6500, 8550],
             "2D": [5900, 7750, 12100, 19800],
             "2E": [6000, 8950, 13850, 22450],
-            "3A": [6600, 7600, 92500, 11700],
+            "3A": [6600, 7600, 9250, 11700],
             "3B": [6800, 9450, 13300, 19200],
             "3C": [5800, 7350, 9600, 12800],
             "3D": [5850, 7700, 10550, 14650],
@@ -97,7 +97,7 @@ function hitungTarif() {
     "3B": [8950, 12450, 17500, 25350],
     "3C": [7600, 9700, 12650, 16900],
     "3D": [7700, 10150, 13900, 19300],
-    "3E": [7800, 10850, 15850, 25550],
+    "3E": [7800, 10850, 15850, 23550],
     "3F": [8950, 12650, 18250, 29150],
     "3G": [14250, 16950, 21850, 29250]
 }
@@ -112,7 +112,7 @@ function hitungTarif() {
             "1E": 5000,
             "1F": 5000,
             "2A": 5000,
-            "2B": 5000,
+            "2B": 5550,
             "2C": 5000,
             "2D": 5000,
             "2E": 5000,
@@ -203,9 +203,9 @@ function hitungTarif() {
     const hasilDiv = document.getElementById('hasil');
     hasilDiv.innerHTML = `
         <div class="result-box">
-            <strong>${formatRupiah(totalTarif)}</strong>
+            <strong class="total-bill">${formatRupiah(totalTarif)}</strong>
 
-            <p>
+            <p class="result-detail">
                 Harga Air: ${formatRupiah(totalTarif - adminFee - denda - biayaMaterai)}, 
                 Retribusi: ${formatRupiah(adminFee)}, 
                 Denda: ${formatRupiah(denda)}, 
