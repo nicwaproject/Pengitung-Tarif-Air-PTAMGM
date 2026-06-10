@@ -131,7 +131,7 @@ input:focus{
 }
 
 .total-bill{
-    font-size:3.5rem;
+    font-size:3rem;
     font-weight:700;
 
     color:#0284c7;
@@ -192,6 +192,10 @@ footer {
 
         padding-right:0;
         padding-bottom:30px;
+    }
+
+    .total-bill {
+        font-size: 2rem;
     }
 
 }
