@@ -54,7 +54,7 @@ body {
 
     padding-right:40px;
 
-    border-right:1px solid #e5e7eb;
+    border-left:1px solid #e5e7eb;
 }
 
 .form-panel{
@@ -142,11 +142,8 @@ input:focus{
 .result-label{
     font-size: 1.6rem;
     font-weight:600;
-
     color:#64748b;
-
     letter-spacing:1px;
-
     margin-bottom:12px;
 }
 
@@ -186,7 +183,7 @@ footer {
     }
 
     .result-panel{
-        border-right:none;
+        border-left:none;
 
         border-bottom:1px solid #e5e7eb;
 
